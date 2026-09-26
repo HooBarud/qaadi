@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brown-50: #fbf9f6;
+  --color-brown-100: #f5f0ea;
+  --color-brown-200: #ebdfd3;
+  --color-brown-300: #dcc8b6;
+  --color-brown-400: #b58d71;
+  --color-brown-500: #8b5d40;
+  --color-brown-600: #6f442c;
+  --color-brown-700: #543324;
+  --color-brown-800: #42271c;
+  --color-brown-900: #2e1b13;
+  --color-brown-950: #1b0e09;
+
+  --color-offwhite-50: #FFFFFF;
+  --color-offwhite-100: #FDFBF7;
+  --color-offwhite-200: #FAF7F2;
+  --color-offwhite-300: #F4EFE6;
+  --color-offwhite-400: #EAE2D5;
+  --color-offwhite-border: #E2D7C7;
+
+  --color-gold-400: #d4af37;
+  --color-gold-500: #c59b27;
+  --color-gold-600: #a9821d;
+  --color-gold-700: #8c6a14;
+}
+
+:root {
+  --brand-brown: #543324;
+  --brand-brown-dark: #3a2217;
+  --brand-brown-light: #6e432f;
+  --brand-offwhite: #FAF7F2;
+  --brand-cream: #F5EFEB;
+  --brand-gold: #c59b27;
+  --brand-border: #E8DFD3;
+}
+
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  /* Hide navigation, headers, and interactive UI */
+  header,
+  nav,
+  aside,
+  button,
+  .print\:hidden {
+    display: none !important;
+  }
+
+  /* Expand print paper container to fill entire page */
+  #printable-receipt,
+  #printable-invoice,
+  #printable-statement {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 24px !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+}

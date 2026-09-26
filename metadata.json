@@ -1,0 +1,8 @@
+{
+  "name": "Nidaamka Dakhliga & Kharashka - Finance System",
+  "description": "Nidaam casri ah oo loogu talagalay maamulka dakhliga, kharashka, deynta, xisaabaadka, invoice-yada, rasiidhada, iyo warbixinnada maaliyadeed ee ganacsiga iyo shakhsiga oo leh taageerada labada lacagood ee USD iyo SLSH.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
